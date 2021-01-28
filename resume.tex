@@ -1,0 +1,199 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItemSingle}[1]{
+  \item\small{
+    {#1}
+  }
+}
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://amishpapneja.com/}{\Large Amish Papneja}} & \faicon{envelope}  \href{mailto:apapneja@gmu.edu}{apapneja@gmu.edu} | \faicon{mobile} : +1-703-338-9185 \\
+  {4307 Ramona Dr, Apt G, Fairfax, VA} & \href{https://github.com/amishpapneja}{\faicon{github} /amishpapneja} | \href{https://www.linkedin.com/in/amishpapneja/}{\faicon{linkedin} /amishpapneja}\\
+  
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {George Mason University}{Fairfax, VA}
+      {Master of Science in Computer Science;  GPA: 3.67}{Aug. 2019 -- May. 2021}
+      \text{\small Relevant Coursework: Analysis of Algorithms, Operating Systems, OOP Specifications, Component based Software Development, Deep Learning, Natural Language Processing}
+    \resumeSubheading
+      {Punjab Technical University}{Chandigarh, India}
+      {Bachelor of Technology in Computer Science;  GPA: 3.46 (74\%)}{Aug. 2014 -- July. 2018}
+      \text{\small Relevant Coursework: Data Structures, Computer Networks, Database Systems, Systems Programming}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {George Mason University}{Fairfax, VA}
+      {Graduate Teaching Assistant}{Dec 2019 - Present}
+      \resumeItemListStart
+        \resumeItemSingle
+          {Lab Instructor for IT Problem-Solving subjects (IT 106 \& 206). Assisting 50+ students with Java, OOP and logic building every semester. Responsible for conducting and grading labs which includes interactive coding problems.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Amazon.com Services LLC }{Detroit, MI}
+      {Software Development Engineer Intern}{May 2020 - Aug 2020}
+      \resumeItemListStart
+        \resumeItemSingle
+          {Worked on an internal serverless ETL platform developed to accelerate data-driven innovation by our customers, a part of Big Data Technologies domain at Amazon.}
+        \resumeItemSingle
+          {Developed and deployed a cloud based full stack operational tool to support the on-call team leveraging several internal backend services using technologies like React, Java and AWS with a microservice architecture.}
+        \resumeItemSingle
+          {Significantly improved the ETL platform's debugging process for high severity tickets. The dashboard reduced the overall time required to analyse a ticket by 10minutes which had tangible business improvements.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cognizant Technology Solutions}{Bengaluru, India}
+      {Programmer Analyst }{Aug 2018 - Jun 2019}
+      \resumeItemListStart
+        \resumeItemSingle
+          {Responsible for UI/UX and media player customization for a potential OTT platform for the leading media company in India.}
+          \resumeItemSingle
+          {Integrated various 3rd party libraries for Phone Authentication, OTP, Social Media logins, Shortening URLs, Crashlytics, Google Analytics, Google Ad Mob.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%--------TECHNICAL SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+ \setlength\itemsep{-0.3em}
+   \item{
+     \textbf{Languages}{: Java, Python, C, SQL, JavaScript, HTML, CSS, JSON, XML,}
+     \hfill
+   }
+   \item{
+     \textbf{Frameworks/Libraries}{: ReactJS, Angular 8, Spring Boot, NodeJS, Bootstrap}
+     \hfill
+   }
+   \item{
+     \textbf{Databases and Visualization}{: MySQL, MongoDB, DynamoDb, Jupyter Notebooks, Tableau}
+     \hfill
+   }
+   \item{
+     \textbf{Data Science Libraries}{: scikit-learn, nltk, Pandas, NumPy, matplotlib, plotly, PyTorch, TensorFlow}
+     \hfill
+    }
+
+    \item{
+     \textbf{DevOps}{: CI/CD, Git, Jenkins, Docker, Kubernetes, EKS, Rancher}
+     \hfill
+   }
+   \item{
+     \textbf{Project Management}{: Agile Methodology, Jira, Confluence}
+     \hfill
+   }
+   \item{
+     \textbf{AWS Technologies}{: EC2, S3, Lambda, API Gateway, VPC, PrivateLinks, Cognito, Route53, RDS, Cloudwatch, CloudFormation, CloudFront, IAM}
+     \hfill
+   }
+  
+   
+ \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Student Survey Web Application}
+      { Designed an MVC based dynamic survey application using Angular 6 and JSF2 framework and implemented the project on the EC2 and S3 instances of (AWS).}
+    \resumeSubItem{SciMash [WNUT 2020]}
+      {Developed an ensemble of BiLSTM-CRF model with stacked embeddings for Named Entity Recognition task on biomedical wet lab noisy user generated dataset. Achieved 76.11 F1 score improving 11.51 points from baseline and secured third position in the WNUT workshop. Used PyTorch Deep Learning framework.}
+     \resumeSubItem{Tree Balancing by Rotations}
+      {Implemented 3 algorithms to convert arbitrary tree to a Balanced BST by using rotations in O(n) time and O(1) space making at most 2n – 2logn rotations and improving on previous results.}
+    \resumeSubItem{OS161 Kernel Augmentation}
+      {Augmented features for single core operating systems. Implemented Syscalls like fork, execv, wait and waitpid. Also implemented MLFQ scheduling algorithm for the OS using C language.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+
+
+
+%-------------------------------------------
+\end{document}
